@@ -1,0 +1,134 @@
+@import '../../styles/tokens.css';
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: #1a233a;
+    /* Dark navy from mockup */
+    padding: var(--space-12) var(--space-6) var(--space-20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-top-badge-wrap {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 24px;
+    margin-bottom: var(--space-8);
+}
+
+.hero-available-badge {
+    display: inline-flex;
+    padding: var(--space-3) var(--space-8);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+}
+
+.hero-main-layout {
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+}
+
+/* Left: image column with blue border */
+.hero-image-col {
+    width: 100%;
+}
+
+.hero-img-container {
+    border: 3px solid #0ea5e9;
+    /* Bright blue border */
+    border-radius: 30px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-car-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Right: content column */
+.hero-content-col {
+    padding-left: var(--space-4);
+}
+
+.hero-price-label {
+    font-size: var(--font-size-lg);
+    color: white;
+    margin-bottom: -10px;
+    font-weight: 400;
+}
+
+.hero-price {
+    margin-bottom: var(--space-8);
+}
+
+.hero-price-num {
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--color-text-white);
+    letter-spacing: -2px;
+}
+
+.hero-desc {
+    font-size: var(--font-size-md);
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: var(--space-10);
+    max-width: 440px;
+}
+
+.btn-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4) var(--space-10);
+    border-radius: var(--radius-lg);
+    background: #474f66;
+    /* Greyish button from mockup */
+    color: var(--color-text-white);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-hero-cta:hover {
+    background: #373f56;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-main-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+    }
+
+    .hero-price-num {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: var(--space-8) var(--space-4);
+    }
+
+    .hero-available-badge {
+        font-size: var(--font-size-sm);
+        padding: var(--space-2) var(--space-4);
+    }
+
+    .hero-price-num {
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,349 @@
+@import '../styles/tokens.css';
+
+.perso-page {
+    background: #f8fafc;
+    /* Light background as per mockup */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+}
+
+.perso-header {
+    background: white;
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.perso-user-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.perso-avatar {
+    width: 36px;
+    height: 36px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+}
+
+.perso-welcome-name {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    color: #0ea5e9;
+}
+
+.perso-header-logo {
+    display: flex;
+    align-items: baseline;
+    gap: 1px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.logo-blue {
+    color: #020617;
+}
+
+.logo-r-blue {
+    color: #0ea5e9;
+    font-style: italic;
+}
+
+.perso-burger-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.perso-main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--space-10) var(--space-6);
+}
+
+.perso-section-title {
+    color: #0ea5e9;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: var(--space-8);
+}
+
+/* Dashboard Grid */
+.perso-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-12);
+}
+
+.perso-card {
+    background: white;
+    border-radius: 24px;
+    padding: var(--space-8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+}
+
+.perso-card-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #020617;
+    margin-bottom: var(--space-4);
+}
+
+.perso-card-subtitle {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0ea5e9;
+    margin-bottom: var(--space-2);
+}
+
+.perso-card-info {
+    color: #64748b;
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-6);
+}
+
+.perso-v-plate {
+    color: #0ea5e9;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid #f1f5f9;
+    margin-bottom: var(--space-6);
+}
+
+.perso-v-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-size-xs);
+    color: #0ea5e9;
+    font-weight: 600;
+}
+
+/* Diagnostic Stats */
+.diag-stats-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: var(--space-5);
+    margin-top: var(--space-4);
+}
+
+.diag-summary-title {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+    color: #020617;
+}
+
+.diag-summary-counts {
+    font-size: var(--font-size-xs);
+    color: #64748b;
+    margin-bottom: var(--space-4);
+}
+
+.diag-code-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: var(--space-3);
+}
+
+.diag-badge {
+    min-width: 50px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+
+.diag-badge.critique {
+    background: #ef4444;
+}
+
+.diag-badge.moyen {
+    background: #f59e0b;
+}
+
+.diag-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #020617;
+}
+
+.perso-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: var(--space-6);
+}
+
+.btn-perso-action {
+    padding: var(--space-3);
+    border-radius: 12px;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.btn-perso-action.dark {
+    background: #334155;
+    color: white;
+}
+
+.btn-perso-action.light {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+}
+
+/* Mes explications */
+.expl-section {
+    margin-bottom: var(--space-12);
+}
+
+.expl-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.expl-item {
+    background: white;
+    padding: var(--space-6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    border: 1px solid #f1f5f9;
+    transition: box-shadow 0.2s;
+}
+
+.expl-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.expl-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+}
+
+.expl-icon-small {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expl-content-wrap h4 {
+    font-size: var(--font-size-sm);
+    font-weight: 800;
+    color: #0ea5e9;
+    margin-bottom: 2px;
+}
+
+.expl-content-wrap p {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.expl-alert-icon {
+    color: #ef4444;
+}
+
+.expl-alert-icon.warning {
+    color: #f59e0b;
+}
+
+/* Mes RDV */
+.rdv-card {
+    background: white;
+    border-radius: 24px;
+    padding: var(--space-8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+}
+
+.rdv-content-box {
+    background: #334155;
+    border-radius: 16px;
+    padding: var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.rdv-info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.rdv-cta-title {
+    color: #0ea5e9;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+.btn-perso-rdv {
+    display: block;
+    margin: 0 auto;
+    background: #334155;
+    color: white;
+    padding: var(--space-3) var(--space-10);
+    border-radius: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .perso-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .rdv-content-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

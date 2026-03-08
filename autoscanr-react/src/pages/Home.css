@@ -1,0 +1,13 @@
+/* Home page — global wrapper reset */
+@import '../styles/tokens.css';
+
+.home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #0d1117;
+}
+
+.home-page main {
+    flex: 1;
+}

@@ -1,0 +1,110 @@
+@import '../../styles/tokens.css';
+
+/* ===== SEARCH PLATE CARD ===== */
+.search-block-wrapper {
+    width: 100%;
+    max-width: 1160px;
+    margin: -60px auto 0;
+    /* Overlap Hero */
+    padding: 0 var(--space-6);
+    position: relative;
+    z-index: 10;
+}
+
+.search-card {
+    background: #3d94b0;
+    /* Teal/Blue-green from mockup */
+    border-radius: 40px;
+    padding: var(--space-8) var(--space-12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.search-card-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-6);
+    text-transform: uppercase;
+}
+
+.check-inline {
+    font-size: 14px;
+}
+
+.search-card-form {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-10);
+}
+
+.search-card-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.search-card-field label {
+    font-size: var(--font-size-lg);
+    font-weight: 800;
+    color: white;
+}
+
+.search-card-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-card-input-wrap input {
+    width: 100%;
+    padding: var(--space-4) var(--space-12) var(--space-4) var(--space-6);
+    border: none;
+    border-radius: var(--radius-full);
+    background: white;
+    font-size: 1rem;
+    color: #475569;
+}
+
+.search-card-input-wrap input::placeholder {
+    color: #cbd5e1;
+}
+
+.search-icon-svg {
+    position: absolute;
+    right: var(--space-6);
+    width: 20px;
+    height: 20px;
+    color: #1e293b;
+    pointer-events: none;
+}
+
+.search-card-error {
+    grid-column: span 2;
+    color: #f87171;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-top: var(--space-2);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+    .search-card-form {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .search-card {
+        padding: var(--space-8) var(--space-6);
+    }
+
+    .search-block-wrapper {
+        margin-top: -40px;
+    }
+}

@@ -1,0 +1,284 @@
+@import '../../styles/tokens.css';
+
+/* ===== STEPS SECTION ===== */
+.steps-section {
+    background: #ffffff;
+    padding: var(--space-20) var(--space-6);
+}
+
+.steps-header {
+    max-width: 800px;
+    margin: 0 auto var(--space-16);
+    text-align: center;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #f0f9ff;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    border-radius: var(--radius-full);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-4);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #111827;
+    margin-bottom: var(--space-4);
+    letter-spacing: -1px;
+}
+
+.section-subtitle {
+    font-size: var(--font-size-md);
+    color: #4b5563;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.steps-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: var(--space-16);
+    align-items: flex-start;
+}
+
+/* ── Left Machine ── */
+.steps-illustration {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-10);
+}
+
+.machine-body {
+    width: 220px;
+    background: #0f172a;
+    border: 4px solid #1e293b;
+    border-radius: 20px 20px 5px 5px;
+    padding: 24px 16px;
+    box-shadow: 25px 25px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-bottom: 12px solid #0f172a;
+}
+
+.machine-header {
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.machine-logo-text {
+    font-size: 14px;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+
+.machine-logo-text strong {
+    color: #0f172a;
+}
+
+.machine-logo-text em {
+    color: #38bdf8;
+    font-style: normal;
+    font-weight: 900;
+    margin-left: -1px;
+}
+
+.machine-screen {
+    background: #38bdf8;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.machine-screen-inner {
+    width: 80%;
+    height: 60%;
+    background: #0c4a6e;
+    border-radius: 4px;
+}
+
+.machine-panel {
+    display: flex;
+    gap: 12px;
+}
+
+.machine-numpad {
+    width: 60px;
+    height: 60px;
+    background: #334155;
+    border-radius: 4px;
+}
+
+.machine-slots {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.m-slot {
+    height: 26px;
+    background: #38bdf8;
+    border-radius: 4px;
+}
+
+.m-slot-wide {
+    height: 26px;
+    background: #64748b;
+    border-radius: 4px;
+}
+
+.machine-stripes {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.machine-stripes span {
+    height: 4px;
+    width: 50px;
+    background: #38bdf8;
+    border-radius: 2px;
+}
+
+/* ── Right Timeline ── */
+.steps-timeline {
+    position: relative;
+    padding-left: var(--space-4);
+}
+
+.timeline-line {
+    position: absolute;
+    left: 42px;
+    top: 40px;
+    bottom: 40px;
+    width: 4px;
+    background: #111827;
+    z-index: 1;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.step-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    position: relative;
+    z-index: 2;
+}
+
+.step-number-circle {
+    width: 56px;
+    height: 56px;
+    background: #38bdf8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.step-card {
+    background: white;
+    border-radius: 24px;
+    padding: var(--space-6) var(--space-8);
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    flex: 1;
+    border: 1px solid #f3f4f6;
+}
+
+.step-card-icon {
+    width: 64px;
+    height: 64px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #111827;
+}
+
+.step-card-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.step-card-content {
+    flex: 1;
+}
+
+.step-card-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.step-card-desc {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .steps-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-illustration {
+        display: none;
+    }
+
+    .timeline-line {
+        left: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+    .step-card {
+        padding: var(--space-4);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps-header .section-title {
+        font-size: 2rem;
+    }
+
+    .step-number-circle {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+
+    .timeline-line {
+        left: 22px;
+    }
+}

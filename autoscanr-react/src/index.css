@@ -1,0 +1,10 @@
+/* index.css — Cleared: global styles are in src/styles/globals.css */
+/* Reset body default flex from Vite template */
+body {
+  display: block;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,36 @@
+@import '../../styles/tokens.css';
+
+.mediation-hero {
+    background: var(--color-bg-navbar);
+    padding: var(--space-24) var(--space-6) var(--space-16);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mediation-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mediation-hero-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    color: white;
+    margin-bottom: var(--space-4);
+}
+
+.mediation-hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .mediation-hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .mediation-hero-subtitle {
+        font-size: var(--font-size-md);
+    }
+}

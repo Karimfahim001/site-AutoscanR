@@ -1,0 +1,4 @@
+.about-page {
+    background: var(--color-bg-dark);
+    min-height: 100vh;
+}
