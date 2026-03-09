@@ -4,7 +4,7 @@
 .hero-section {
     background: #1a233a;
     /* Dark navy from mockup */
-    padding: var(--space-12) var(--space-6) var(--space-20);
+    padding: var(--space-12) var(--space-6) 120px;
     display: flex;
     flex-direction: column;
     align-items: center;

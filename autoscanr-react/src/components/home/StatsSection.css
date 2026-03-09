@@ -3,8 +3,11 @@
 /* ===== STATS SECTION ===== */
 .stats-section {
     background: var(--color-bg-light);
-    padding: var(--space-12) var(--space-6);
+    padding: 100px var(--space-6) var(--space-12);
+    margin-top: -80px;
     border-bottom: 1px solid #e8eef8;
+    position: relative;
+    z-index: 1;
 }
 
 .stats-inner {

@@ -113,13 +113,17 @@ export default function Contact() {
                         <aside className="contact-info">
                             <div className="info-card">
                                 <h3>Coordonnées</h3>
-                                <div className="info-item">
-                                    <span className="info-icon">📧</span>
-                                    <p>contact@autoscanr.com</p>
+                                <div className="contact-item">
+                                    <span className="contact-icon">📧</span>
+                                    <a href="mailto:contact@autoscanr.com">contact@autoscanr.com</a>
                                 </div>
-                                <div className="info-item">
-                                    <span className="info-icon">📍</span>
-                                    <p>Toulon, France</p>
+                                <div className="contact-item">
+                                    <span className="contact-icon">📞</span>
+                                    <span>+33 1 23 45 67 89</span>
+                                </div>
+                                <div className="contact-item">
+                                    <span className="contact-icon">📍</span>
+                                    <span>Toulon, France</span>
                                 </div>
                             </div>
                         </aside>

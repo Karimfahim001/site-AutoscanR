@@ -10,6 +10,7 @@ import LoginPro from './pages/LoginPro';
 import EspacePerso from './pages/EspacePerso';
 import EspacePro from './pages/EspacePro';
 import CodeDetail from './pages/CodeDetail';
+import VehicleCheck from './pages/VehicleCheck';
 import './styles/globals.css';
 
 export default function App() {
@@ -18,6 +19,9 @@ export default function App() {
       <Routes>
         {/* Page d'accueil — navbar incluse dans le composant */}
         <Route path="/" element={<Home />} />
+
+        {/* Vérification véhicule */}
+        <Route path="/vehicule" element={<VehicleCheck />} />
 
         {/* Qui sommes-nous */}
         <Route path="/qui-sommes-nous" element={<About />} />
